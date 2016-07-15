@@ -40,6 +40,11 @@ namespace AddressBook
         Contact oneContact = Contact.Find(parameters.id);
         return View["contact.cshtml", oneContact];
       };
+
+      Post["/contacts_deleted"] = _ => {
+        Contact.ClearAll();
+        return View["contacts_deleted.cshtml"];
+      };
     }
   }
 }

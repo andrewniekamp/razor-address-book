@@ -47,6 +47,7 @@ body {
 
 .container-body a {
   color: #2E4057;
+  font-size: 18px;
 }
 
 .container-body a:hover {
