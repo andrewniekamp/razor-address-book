@@ -92,6 +92,11 @@ namespace AddressBook.Objects
       _zip = newZip;
     }
 
+    public int GetId()
+    {
+      return _id;
+    }
+
     public static List<Contact> GetAll()
     {
       return _instances;
