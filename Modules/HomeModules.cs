@@ -19,12 +19,12 @@ namespace AddressBook
 
       Get["/contact_new"] = _ => {
 
-        return View["contact_new.cshtml"]
+        return View["contact_new.cshtml"];
       };
 
       Post["/contact_created"] = _ => {
 
-        return View["contact_created.cshtml"]
+        return View["contact_created.cshtml"];
       };
     }
   }

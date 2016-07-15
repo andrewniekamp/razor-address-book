@@ -11,6 +11,7 @@ namespace AddressBook.Objects
     private string _city;
     private string _state;
     private string _zip;
+    private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
     public Contact( string name, string number, string address1, string address2, string city, string state, string zip)
@@ -32,7 +33,7 @@ namespace AddressBook.Objects
     {
       return _name;
     }
-    public void SetName(newName)
+    public void SetName(string newName)
     {
       _name = newName;
     }
@@ -41,16 +42,16 @@ namespace AddressBook.Objects
     {
       return _number;
     }
-    public void SetNumber(newNumber)
+    public void SetNumber(string newNumber)
     {
-      _number = newNnumber;
+      _number = newNumber;
     }
 
     public string GetAddress1()
     {
       return _address1;
     }
-    public void SetAddress1(newAddress1)
+    public void SetAddress1(string newAddress1)
     {
       _address1 = newAddress1;
     }
@@ -59,7 +60,7 @@ namespace AddressBook.Objects
     {
       return _address2;
     }
-    public void SetAddress2(newAddress2)
+    public void SetAddress2(string newAddress2)
     {
       _address2 = newAddress2;
     }
@@ -68,7 +69,7 @@ namespace AddressBook.Objects
     {
       return _city;
     }
-    public void SetCity(newCity)
+    public void SetCity(string newCity)
     {
       _city = newCity;
     }
@@ -77,7 +78,7 @@ namespace AddressBook.Objects
     {
       return _state;
     }
-    public void SetState(newState)
+    public void SetState(string newState)
     {
       _state = newState;
     }
@@ -86,7 +87,7 @@ namespace AddressBook.Objects
     {
       return _zip;
     }
-    public void SetZip(newZip)
+    public void SetZip(string newZip)
     {
       _zip = newZip;
     }
@@ -101,7 +102,7 @@ namespace AddressBook.Objects
       _instances.Clear();
     }
 
-    public static Place Find(int searchId)
+    public static Contact Find(int searchId)
     {
       return _instances[searchId -1];
     }
