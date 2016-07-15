@@ -17,9 +17,14 @@ namespace AddressBook
         return View["contact_view_all.cshtml"];
       };
 
-      Get["/contact_create"] = _ => {
+      Get["/contact_new"] = _ => {
 
-        return View["contact_create.cshtml"]
+        return View["contact_new.cshtml"]
+      };
+
+      Post["/contact_created"] = _ => {
+
+        return View["contact_created.cshtml"]
       };
     }
   }
