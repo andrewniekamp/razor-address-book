@@ -1,0 +1,8 @@
+<h1>All Contacts</h1>
+
+<ul>
+  @foreach(var contact in Model)
+  {
+    <li><a href="/contact/@contact.GetId()"> @contact.GetName()</a></li>
+  }
+</ul>
