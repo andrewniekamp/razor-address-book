@@ -91,6 +91,21 @@ namespace AddressBook.Objects
       _zip = newZip;
     }
 
+    public static List<Contact> GetAll()
+    {
+      return _instances;
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
+    public static Place Find(int searchId)
+    {
+      return _instances[searchId -1];
+    }
+
 
   }
 }
