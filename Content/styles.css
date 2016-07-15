@@ -10,6 +10,21 @@ body {
   margin-bottom: 50px;
 }
 
+.container-body h4 {
+  color: white;
+}
+
+.contact-listing-label {
+  display: inline-block;
+  width: 175px;
+  text-align: right;
+  color: #2E4057;
+  border-bottom: 2px solid #5FB156;
+  border-right: 1px solid #F7981F;
+  padding: 5px;
+  margin-right: 10px;
+}
+
 .container-banner {
   background-color: #2E4057;
   color: #FFFFFF;
@@ -64,8 +79,8 @@ label {
 }
 
 .btn-app:hover {
-  background-color: #F7981F;
-  color: #2E4057;
+  background-color: #2E4057;
+  color: #5FB156;
   border-bottom: 3px solid #F7981F;
 }
 
