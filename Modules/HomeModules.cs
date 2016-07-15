@@ -20,11 +20,6 @@ namespace AddressBook
         return View["contact_new.cshtml"];
       };
 
-      Get["/contact_view_all"] = _ => {
-        List<Contact> allContacts = Contact.GetAll();
-        return View["contact_view_all.cshtml", allContacts];
-      };
-
       Post["/contact_created"] = _ => {
         Contact newContact = new Contact( Request.Form["contact-name"],
                                           Request.Form["contact-number"],
@@ -36,7 +31,15 @@ namespace AddressBook
         return View["contact_created.cshtml", newContact];
       };
 
+      Get["/contact_view_all"] = _ => {
+        List<Contact> allContacts = Contact.GetAll();
+        return View["contact_view_all.cshtml", allContacts];
+      };
 
+      Get["/contact/{id}"] = parameters => {
+        Contact oneContact = Contact.Find(parameters.id);
+        return View["contact.cshtml", oneContact];
+      };
     }
   }
 }
