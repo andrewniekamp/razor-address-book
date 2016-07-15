@@ -28,6 +28,69 @@ namespace AddressBook.Objects
       _id = _instances.Count;
     }
 
+    public string GetName()
+    {
+      return _name;
+    }
+    public void SetName(newName)
+    {
+      _name = newName;
+    }
+
+    public string GetNumber()
+    {
+      return _number;
+    }
+    public void SetNumber(newNumber)
+    {
+      _number = newNnumber;
+    }
+
+    public string GetAddress1()
+    {
+      return _address1;
+    }
+    public void SetAddress1(newAddress1)
+    {
+      _address1 = newAddress1;
+    }
+
+    public string GetAddress2()
+    {
+      return _address2;
+    }
+    public void SetAddress2(newAddress2)
+    {
+      _address2 = newAddress2;
+    }
+
+    public string GetCity()
+    {
+      return _city;
+    }
+    public void SetCity(newCity)
+    {
+      _city = newCity;
+    }
+
+    public string GetState()
+    {
+      return _state;
+    }
+    public void SetState(newState)
+    {
+      _state = newState;
+    }
+
+    public string GetZip()
+    {
+      return _zip;
+    }
+    public void SetZip(newZip)
+    {
+      _zip = newZip;
+    }
+
 
   }
 }
