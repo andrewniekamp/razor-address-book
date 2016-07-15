@@ -1,12 +1,30 @@
 body {
-  background-color: steelblue;
+  background-color: #CAC2B5;
 }
 
 .container-banner {
-  background-color: white;
+  background-color: #6A6262;
+  color: #DADDD8;
+}
+
+#banner-title {
+  border-bottom: 4px solid #F8FA90;
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  margin: 25px;
 }
 
 .container-body {
-  background-color: brown;
-  color: white;
+  background-color: #493548;
+  color: #DADDD8;
 }
+
+.btn-app {
+  background-color: #F8FA90;
+  color: #6A6262;
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+/*APPLY THE CLEAR METHOD!*/
