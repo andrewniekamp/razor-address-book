@@ -29,7 +29,7 @@ namespace AddressBook
                                           Request.Form["contact-state"],
                                           Request.Form["contact-zip"]);
         return View["contact_created.cshtml", newContact];
-      };
+        };
 
       Get["/contact_view_all"] = _ => {
         List<Contact> allContacts = Contact.GetAll();
