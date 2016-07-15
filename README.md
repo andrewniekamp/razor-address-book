@@ -1,4 +1,4 @@
-# Simple Address Book
+# Address Book App
 
 ##### By Andrew Niekamp
 
