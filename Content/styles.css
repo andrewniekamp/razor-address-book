@@ -1,0 +1,12 @@
+body {
+  background-color: steelblue;
+}
+
+.container-banner {
+  background-color: white;
+}
+
+.container-body {
+  background-color: brown;
+  color: white;
+}
