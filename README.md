@@ -10,6 +10,18 @@ _Allows the user to create and store address records._
 
 _Files can be cloned from https://github.com/aniekamp/razor-address-book.git and run in a browser (requires a server environment)._
 
+_Using Mono in the root directory, type the following at the command prompt:
+
+_To install dependencies:_
+
+\>dnu restore
+
+_To run the local server:_
+
+\>dnx kestrel
+
+_Navigate to http://localhost:5004 in your browser._
+
 ## Specifications
 | Behavior | Input Example | Output Example |
 | ------------- |:-------------:| -----:|
